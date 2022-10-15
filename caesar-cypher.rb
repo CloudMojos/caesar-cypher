@@ -5,10 +5,10 @@ LOCASE_UPPER = 122
 LOCASE_LOWER = 97
 ## Function Caesar Cypher, returns string
 def caesar_cypher(string, shift)
-  # Makes sure that the function can handle -26 > shift > 26 
+  # Makes sure that the function can handle -26 > shift > 26
   shift = shift % 26
   shifted = 0
-  new_string = Array.new()
+  new_string = []
   # Iterate over each character of a string
   string.each_char do |char|
     # If character is alpha, lowercase
@@ -46,8 +46,8 @@ def caesar_cypher(string, shift)
   new_string.join
 end
 
-puts caesar_cypher("abcxyz!", 1) #"bcdyxa"
-puts caesar_cypher("abcxyz?", -1) #"zabwxy"
-puts caesar_cypher("abcxyz", -26) #"abcxyz"
-puts caesar_cypher("abcxyz", 26) #"abcxyz"
-puts caesar_cypher("abcxyz", 53) #"bcdyza"
+puts caesar_cypher('abcxyz!', 1) # "bcdyxa"
+puts caesar_cypher('abcxyz?', -1) # "zabwxy"
+puts caesar_cypher('abcxyz', -26) # "abcxyz"
+puts caesar_cypher('abcxyz', 26) # "abcxyz"
+puts caesar_cypher('abcxyz', 53) # "bcdyza"
