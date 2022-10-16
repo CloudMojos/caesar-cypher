@@ -45,12 +45,3 @@ def caesar_cypher(string, shift)
   end
   new_string.join
 end
-<<<<<<< HEAD
-
-puts caesar_cypher('abcxyz!', 1) # "bcdyxa"
-puts caesar_cypher('abcxyz?', -1) # "zabwxy"
-puts caesar_cypher('abcxyz', -26) # "abcxyz"
-puts caesar_cypher('abcxyz', 26) # "abcxyz"
-puts caesar_cypher('abcxyz', 53) # "bcdyza"
-=======
->>>>>>> rspec
